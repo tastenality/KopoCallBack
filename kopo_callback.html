@@ -5,12 +5,12 @@
     <title>주소검색</title>
 </head>
 <style>
-    html,body{ margin:0; padding:0; height:100%; width:100%; }
-    #full-size{
-      height: 100%;
-      width: 100%;
-      overflow:hidden; /* or overflow:auto; if you want scrollbars */
-    }
+html,body{ margin:0; padding:0; height:100%; width:100%; }
+#full-size{
+  height: 100%;
+  width: 100%;
+  overflow:hidden; /* or overflow:auto; if you want scrollbars */
+}
 </style>
 <body>
 <div id="full-size"></div>
@@ -38,3 +38,10 @@
           hideMapBtn: true,
           hideEngBtn: false,
       }).embed(element_layer);
+
+      // iframe을 넣은 element를 보이게 한다.
+      element_layer.style.display = 'block';
+    });
+
+</script>
+</html>
